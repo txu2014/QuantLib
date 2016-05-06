@@ -1,0 +1,9 @@
+
+Changes for QuantLib 1.6.1:
+===========================
+
+QuantLib 1.6.1 is a compatibility release. It adds out-of-the-box
+support for the newly released Visual Studio 2015, and avoids use of
+deprecated Boost macros that will be removed in the upcoming Boost
+1.59.0 release.
+
