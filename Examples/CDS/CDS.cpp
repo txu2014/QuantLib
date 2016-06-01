@@ -247,7 +247,8 @@ int main(int, char* []) {
             cout << minutes << " m ";
         cout << fixed << setprecision(0)
              << seconds << " s" << endl;
-
+		int i;
+		cin >> i;
         return 0;
     } catch (exception& e) {
         cerr << e.what() << endl;

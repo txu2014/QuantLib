@@ -227,7 +227,7 @@ int main(int, char* []) {
          for (Size i=0; i<numberOfBonds; i++) {
              bondInstruments.push_back(bondsHelpers[i]);
          }
-
+		 //boost::shared_ptr<YieldTermStructure> bondDiscount(new PiecewiseYieldCurve<Discount,Linear>()
          boost::shared_ptr<YieldTermStructure> bondDiscountingTermStructure(
                  new PiecewiseYieldCurve<Discount,LogLinear>(
                          settlementDate, bondInstruments,
@@ -583,7 +583,8 @@ int main(int, char* []) {
              std::cout << minutes << " m ";
          std::cout << std::fixed << std::setprecision(0)
          << seconds << " s\n" << std::endl;
-
+		 int i;
+		 std::cin >> i;
          return 0;
 
     } catch (std::exception& e) {
