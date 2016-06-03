@@ -345,9 +345,10 @@ int main(int, char* [])
             cout << hours << " h ";
         if (hours > 0 || minutes > 0)
             cout << minutes << " m ";
-        cout << fixed << setprecision(0)
+        cout << fixed << setprecision(4)
              << seconds << " s\n" << endl;
-
+		int i;
+		cin >> i;
         return 0;
 
     } catch (std::exception& e) {
